@@ -1,0 +1,702 @@
+[
+  {
+    "id": "p001",
+    "title": "Produto 001",
+    "description": "Descrição do Produto 001 para demonstração.",
+    "price": 12.49,
+    "image": ""
+  },
+  {
+    "id": "p002",
+    "title": "Produto 002",
+    "description": "Descrição do Produto 002 para demonstração.",
+    "price": 14.99,
+    "image": ""
+  },
+  {
+    "id": "p003",
+    "title": "Produto 003",
+    "description": "Descrição do Produto 003 para demonstração.",
+    "price": 17.49,
+    "image": ""
+  },
+  {
+    "id": "p004",
+    "title": "Produto 004",
+    "description": "Descrição do Produto 004 para demonstração.",
+    "price": 19.99,
+    "image": ""
+  },
+  {
+    "id": "p005",
+    "title": "Produto 005",
+    "description": "Descrição do Produto 005 para demonstração.",
+    "price": 22.49,
+    "image": ""
+  },
+  {
+    "id": "p006",
+    "title": "Produto 006",
+    "description": "Descrição do Produto 006 para demonstração.",
+    "price": 24.99,
+    "image": ""
+  },
+  {
+    "id": "p007",
+    "title": "Produto 007",
+    "description": "Descrição do Produto 007 para demonstração.",
+    "price": 27.49,
+    "image": ""
+  },
+  {
+    "id": "p008",
+    "title": "Produto 008",
+    "description": "Descrição do Produto 008 para demonstração.",
+    "price": 29.99,
+    "image": ""
+  },
+  {
+    "id": "p009",
+    "title": "Produto 009",
+    "description": "Descrição do Produto 009 para demonstração.",
+    "price": 32.49,
+    "image": ""
+  },
+  {
+    "id": "p010",
+    "title": "Produto 010",
+    "description": "Descrição do Produto 010 para demonstração.",
+    "price": 34.99,
+    "image": ""
+  },
+  {
+    "id": "p011",
+    "title": "Produto 011",
+    "description": "Descrição do Produto 011 para demonstração.",
+    "price": 37.49,
+    "image": ""
+  },
+  {
+    "id": "p012",
+    "title": "Produto 012",
+    "description": "Descrição do Produto 012 para demonstração.",
+    "price": 39.99,
+    "image": ""
+  },
+  {
+    "id": "p013",
+    "title": "Produto 013",
+    "description": "Descrição do Produto 013 para demonstração.",
+    "price": 42.49,
+    "image": ""
+  },
+  {
+    "id": "p014",
+    "title": "Produto 014",
+    "description": "Descrição do Produto 014 para demonstração.",
+    "price": 44.99,
+    "image": ""
+  },
+  {
+    "id": "p015",
+    "title": "Produto 015",
+    "description": "Descrição do Produto 015 para demonstração.",
+    "price": 47.49,
+    "image": ""
+  },
+  {
+    "id": "p016",
+    "title": "Produto 016",
+    "description": "Descrição do Produto 016 para demonstração.",
+    "price": 49.99,
+    "image": ""
+  },
+  {
+    "id": "p017",
+    "title": "Produto 017",
+    "description": "Descrição do Produto 017 para demonstração.",
+    "price": 52.49,
+    "image": ""
+  },
+  {
+    "id": "p018",
+    "title": "Produto 018",
+    "description": "Descrição do Produto 018 para demonstração.",
+    "price": 54.99,
+    "image": ""
+  },
+  {
+    "id": "p019",
+    "title": "Produto 019",
+    "description": "Descrição do Produto 019 para demonstração.",
+    "price": 57.49,
+    "image": ""
+  },
+  {
+    "id": "p020",
+    "title": "Produto 020",
+    "description": "Descrição do Produto 020 para demonstração.",
+    "price": 59.99,
+    "image": ""
+  },
+  {
+    "id": "p021",
+    "title": "Produto 021",
+    "description": "Descrição do Produto 021 para demonstração.",
+    "price": 62.49,
+    "image": ""
+  },
+  {
+    "id": "p022",
+    "title": "Produto 022",
+    "description": "Descrição do Produto 022 para demonstração.",
+    "price": 64.99,
+    "image": ""
+  },
+  {
+    "id": "p023",
+    "title": "Produto 023",
+    "description": "Descrição do Produto 023 para demonstração.",
+    "price": 67.49,
+    "image": ""
+  },
+  {
+    "id": "p024",
+    "title": "Produto 024",
+    "description": "Descrição do Produto 024 para demonstração.",
+    "price": 69.99,
+    "image": ""
+  },
+  {
+    "id": "p025",
+    "title": "Produto 025",
+    "description": "Descrição do Produto 025 para demonstração.",
+    "price": 72.49,
+    "image": ""
+  },
+  {
+    "id": "p026",
+    "title": "Produto 026",
+    "description": "Descrição do Produto 026 para demonstração.",
+    "price": 74.99,
+    "image": ""
+  },
+  {
+    "id": "p027",
+    "title": "Produto 027",
+    "description": "Descrição do Produto 027 para demonstração.",
+    "price": 77.49,
+    "image": ""
+  },
+  {
+    "id": "p028",
+    "title": "Produto 028",
+    "description": "Descrição do Produto 028 para demonstração.",
+    "price": 79.99,
+    "image": ""
+  },
+  {
+    "id": "p029",
+    "title": "Produto 029",
+    "description": "Descrição do Produto 029 para demonstração.",
+    "price": 82.49,
+    "image": ""
+  },
+  {
+    "id": "p030",
+    "title": "Produto 030",
+    "description": "Descrição do Produto 030 para demonstração.",
+    "price": 84.99,
+    "image": ""
+  },
+  {
+    "id": "p031",
+    "title": "Produto 031",
+    "description": "Descrição do Produto 031 para demonstração.",
+    "price": 87.49,
+    "image": ""
+  },
+  {
+    "id": "p032",
+    "title": "Produto 032",
+    "description": "Descrição do Produto 032 para demonstração.",
+    "price": 89.99,
+    "image": ""
+  },
+  {
+    "id": "p033",
+    "title": "Produto 033",
+    "description": "Descrição do Produto 033 para demonstração.",
+    "price": 92.49,
+    "image": ""
+  },
+  {
+    "id": "p034",
+    "title": "Produto 034",
+    "description": "Descrição do Produto 034 para demonstração.",
+    "price": 94.99,
+    "image": ""
+  },
+  {
+    "id": "p035",
+    "title": "Produto 035",
+    "description": "Descrição do Produto 035 para demonstração.",
+    "price": 97.49,
+    "image": ""
+  },
+  {
+    "id": "p036",
+    "title": "Produto 036",
+    "description": "Descrição do Produto 036 para demonstração.",
+    "price": 99.99,
+    "image": ""
+  },
+  {
+    "id": "p037",
+    "title": "Produto 037",
+    "description": "Descrição do Produto 037 para demonstração.",
+    "price": 102.49,
+    "image": ""
+  },
+  {
+    "id": "p038",
+    "title": "Produto 038",
+    "description": "Descrição do Produto 038 para demonstração.",
+    "price": 104.99,
+    "image": ""
+  },
+  {
+    "id": "p039",
+    "title": "Produto 039",
+    "description": "Descrição do Produto 039 para demonstração.",
+    "price": 107.49,
+    "image": ""
+  },
+  {
+    "id": "p040",
+    "title": "Produto 040",
+    "description": "Descrição do Produto 040 para demonstração.",
+    "price": 109.99,
+    "image": ""
+  },
+  {
+    "id": "p041",
+    "title": "Produto 041",
+    "description": "Descrição do Produto 041 para demonstração.",
+    "price": 112.49,
+    "image": ""
+  },
+  {
+    "id": "p042",
+    "title": "Produto 042",
+    "description": "Descrição do Produto 042 para demonstração.",
+    "price": 114.99,
+    "image": ""
+  },
+  {
+    "id": "p043",
+    "title": "Produto 043",
+    "description": "Descrição do Produto 043 para demonstração.",
+    "price": 117.49,
+    "image": ""
+  },
+  {
+    "id": "p044",
+    "title": "Produto 044",
+    "description": "Descrição do Produto 044 para demonstração.",
+    "price": 119.99,
+    "image": ""
+  },
+  {
+    "id": "p045",
+    "title": "Produto 045",
+    "description": "Descrição do Produto 045 para demonstração.",
+    "price": 122.49,
+    "image": ""
+  },
+  {
+    "id": "p046",
+    "title": "Produto 046",
+    "description": "Descrição do Produto 046 para demonstração.",
+    "price": 124.99,
+    "image": ""
+  },
+  {
+    "id": "p047",
+    "title": "Produto 047",
+    "description": "Descrição do Produto 047 para demonstração.",
+    "price": 127.49,
+    "image": ""
+  },
+  {
+    "id": "p048",
+    "title": "Produto 048",
+    "description": "Descrição do Produto 048 para demonstração.",
+    "price": 129.99,
+    "image": ""
+  },
+  {
+    "id": "p049",
+    "title": "Produto 049",
+    "description": "Descrição do Produto 049 para demonstração.",
+    "price": 132.49,
+    "image": ""
+  },
+  {
+    "id": "p050",
+    "title": "Produto 050",
+    "description": "Descrição do Produto 050 para demonstração.",
+    "price": 134.99,
+    "image": ""
+  },
+  {
+    "id": "p051",
+    "title": "Produto 051",
+    "description": "Descrição do Produto 051 para demonstração.",
+    "price": 137.49,
+    "image": ""
+  },
+  {
+    "id": "p052",
+    "title": "Produto 052",
+    "description": "Descrição do Produto 052 para demonstração.",
+    "price": 139.99,
+    "image": ""
+  },
+  {
+    "id": "p053",
+    "title": "Produto 053",
+    "description": "Descrição do Produto 053 para demonstração.",
+    "price": 142.49,
+    "image": ""
+  },
+  {
+    "id": "p054",
+    "title": "Produto 054",
+    "description": "Descrição do Produto 054 para demonstração.",
+    "price": 144.99,
+    "image": ""
+  },
+  {
+    "id": "p055",
+    "title": "Produto 055",
+    "description": "Descrição do Produto 055 para demonstração.",
+    "price": 147.49,
+    "image": ""
+  },
+  {
+    "id": "p056",
+    "title": "Produto 056",
+    "description": "Descrição do Produto 056 para demonstração.",
+    "price": 149.99,
+    "image": ""
+  },
+  {
+    "id": "p057",
+    "title": "Produto 057",
+    "description": "Descrição do Produto 057 para demonstração.",
+    "price": 152.49,
+    "image": ""
+  },
+  {
+    "id": "p058",
+    "title": "Produto 058",
+    "description": "Descrição do Produto 058 para demonstração.",
+    "price": 154.99,
+    "image": ""
+  },
+  {
+    "id": "p059",
+    "title": "Produto 059",
+    "description": "Descrição do Produto 059 para demonstração.",
+    "price": 157.49,
+    "image": ""
+  },
+  {
+    "id": "p060",
+    "title": "Produto 060",
+    "description": "Descrição do Produto 060 para demonstração.",
+    "price": 159.99,
+    "image": ""
+  },
+  {
+    "id": "p061",
+    "title": "Produto 061",
+    "description": "Descrição do Produto 061 para demonstração.",
+    "price": 162.49,
+    "image": ""
+  },
+  {
+    "id": "p062",
+    "title": "Produto 062",
+    "description": "Descrição do Produto 062 para demonstração.",
+    "price": 164.99,
+    "image": ""
+  },
+  {
+    "id": "p063",
+    "title": "Produto 063",
+    "description": "Descrição do Produto 063 para demonstração.",
+    "price": 167.49,
+    "image": ""
+  },
+  {
+    "id": "p064",
+    "title": "Produto 064",
+    "description": "Descrição do Produto 064 para demonstração.",
+    "price": 169.99,
+    "image": ""
+  },
+  {
+    "id": "p065",
+    "title": "Produto 065",
+    "description": "Descrição do Produto 065 para demonstração.",
+    "price": 172.49,
+    "image": ""
+  },
+  {
+    "id": "p066",
+    "title": "Produto 066",
+    "description": "Descrição do Produto 066 para demonstração.",
+    "price": 174.99,
+    "image": ""
+  },
+  {
+    "id": "p067",
+    "title": "Produto 067",
+    "description": "Descrição do Produto 067 para demonstração.",
+    "price": 177.49,
+    "image": ""
+  },
+  {
+    "id": "p068",
+    "title": "Produto 068",
+    "description": "Descrição do Produto 068 para demonstração.",
+    "price": 179.99,
+    "image": ""
+  },
+  {
+    "id": "p069",
+    "title": "Produto 069",
+    "description": "Descrição do Produto 069 para demonstração.",
+    "price": 182.49,
+    "image": ""
+  },
+  {
+    "id": "p070",
+    "title": "Produto 070",
+    "description": "Descrição do Produto 070 para demonstração.",
+    "price": 184.99,
+    "image": ""
+  },
+  {
+    "id": "p071",
+    "title": "Produto 071",
+    "description": "Descrição do Produto 071 para demonstração.",
+    "price": 187.49,
+    "image": ""
+  },
+  {
+    "id": "p072",
+    "title": "Produto 072",
+    "description": "Descrição do Produto 072 para demonstração.",
+    "price": 189.99,
+    "image": ""
+  },
+  {
+    "id": "p073",
+    "title": "Produto 073",
+    "description": "Descrição do Produto 073 para demonstração.",
+    "price": 192.49,
+    "image": ""
+  },
+  {
+    "id": "p074",
+    "title": "Produto 074",
+    "description": "Descrição do Produto 074 para demonstração.",
+    "price": 194.99,
+    "image": ""
+  },
+  {
+    "id": "p075",
+    "title": "Produto 075",
+    "description": "Descrição do Produto 075 para demonstração.",
+    "price": 197.49,
+    "image": ""
+  },
+  {
+    "id": "p076",
+    "title": "Produto 076",
+    "description": "Descrição do Produto 076 para demonstração.",
+    "price": 199.99,
+    "image": ""
+  },
+  {
+    "id": "p077",
+    "title": "Produto 077",
+    "description": "Descrição do Produto 077 para demonstração.",
+    "price": 202.49,
+    "image": ""
+  },
+  {
+    "id": "p078",
+    "title": "Produto 078",
+    "description": "Descrição do Produto 078 para demonstração.",
+    "price": 204.99,
+    "image": ""
+  },
+  {
+    "id": "p079",
+    "title": "Produto 079",
+    "description": "Descrição do Produto 079 para demonstração.",
+    "price": 207.49,
+    "image": ""
+  },
+  {
+    "id": "p080",
+    "title": "Produto 080",
+    "description": "Descrição do Produto 080 para demonstração.",
+    "price": 209.99,
+    "image": ""
+  },
+  {
+    "id": "p081",
+    "title": "Produto 081",
+    "description": "Descrição do Produto 081 para demonstração.",
+    "price": 212.49,
+    "image": ""
+  },
+  {
+    "id": "p082",
+    "title": "Produto 082",
+    "description": "Descrição do Produto 082 para demonstração.",
+    "price": 214.99,
+    "image": ""
+  },
+  {
+    "id": "p083",
+    "title": "Produto 083",
+    "description": "Descrição do Produto 083 para demonstração.",
+    "price": 217.49,
+    "image": ""
+  },
+  {
+    "id": "p084",
+    "title": "Produto 084",
+    "description": "Descrição do Produto 084 para demonstração.",
+    "price": 219.99,
+    "image": ""
+  },
+  {
+    "id": "p085",
+    "title": "Produto 085",
+    "description": "Descrição do Produto 085 para demonstração.",
+    "price": 222.49,
+    "image": ""
+  },
+  {
+    "id": "p086",
+    "title": "Produto 086",
+    "description": "Descrição do Produto 086 para demonstração.",
+    "price": 224.99,
+    "image": ""
+  },
+  {
+    "id": "p087",
+    "title": "Produto 087",
+    "description": "Descrição do Produto 087 para demonstração.",
+    "price": 227.49,
+    "image": ""
+  },
+  {
+    "id": "p088",
+    "title": "Produto 088",
+    "description": "Descrição do Produto 088 para demonstração.",
+    "price": 229.99,
+    "image": ""
+  },
+  {
+    "id": "p089",
+    "title": "Produto 089",
+    "description": "Descrição do Produto 089 para demonstração.",
+    "price": 232.49,
+    "image": ""
+  },
+  {
+    "id": "p090",
+    "title": "Produto 090",
+    "description": "Descrição do Produto 090 para demonstração.",
+    "price": 234.99,
+    "image": ""
+  },
+  {
+    "id": "p091",
+    "title": "Produto 091",
+    "description": "Descrição do Produto 091 para demonstração.",
+    "price": 237.49,
+    "image": ""
+  },
+  {
+    "id": "p092",
+    "title": "Produto 092",
+    "description": "Descrição do Produto 092 para demonstração.",
+    "price": 239.99,
+    "image": ""
+  },
+  {
+    "id": "p093",
+    "title": "Produto 093",
+    "description": "Descrição do Produto 093 para demonstração.",
+    "price": 242.49,
+    "image": ""
+  },
+  {
+    "id": "p094",
+    "title": "Produto 094",
+    "description": "Descrição do Produto 094 para demonstração.",
+    "price": 244.99,
+    "image": ""
+  },
+  {
+    "id": "p095",
+    "title": "Produto 095",
+    "description": "Descrição do Produto 095 para demonstração.",
+    "price": 247.49,
+    "image": ""
+  },
+  {
+    "id": "p096",
+    "title": "Produto 096",
+    "description": "Descrição do Produto 096 para demonstração.",
+    "price": 249.99,
+    "image": ""
+  },
+  {
+    "id": "p097",
+    "title": "Produto 097",
+    "description": "Descrição do Produto 097 para demonstração.",
+    "price": 252.49,
+    "image": ""
+  },
+  {
+    "id": "p098",
+    "title": "Produto 098",
+    "description": "Descrição do Produto 098 para demonstração.",
+    "price": 254.99,
+    "image": ""
+  },
+  {
+    "id": "p099",
+    "title": "Produto 099",
+    "description": "Descrição do Produto 099 para demonstração.",
+    "price": 257.49,
+    "image": ""
+  },
+  {
+    "id": "p100",
+    "title": "Produto 100",
+    "description": "Descrição do Produto 100 para demonstração.",
+    "price": 259.99,
+    "image": ""
+  }
+]

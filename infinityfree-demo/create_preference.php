@@ -1,29 +1,44 @@
 <?php
-// Exemplo simples para criar uma preferência Mercado Pago usando cURL
-// Ajuste o access_token com o seu valor (sandbox ou produção).
+// Criar preferência Mercado Pago a partir de JSON POST (esqueleto para demo)
+// Substitua pelo seu Access Token do Mercado Pago (sandbox ou produção)
 
 $access_token = 'COLOQUE_SEU_ACCESS_TOKEN_AQUI';
 
-// Leitura de parâmetros da querystring (sempre limpar/validar em produção)
-$title = isset($_GET['title']) ? $_GET['title'] : 'Produto';
-$price = isset($_GET['price']) ? floatval($_GET['price']) : 0;
+// Determina base URL automaticamente para back_urls
+$scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+$base = $scheme . '://' . $_SERVER['HTTP_HOST'];
 
-if ($price <= 0) {
-    die('Preço inválido');
+// Ler entrada JSON (esperamos { items: [ {title, quantity, unit_price}, ... ] })
+$input = file_get_contents('php://input');
+$data_in = json_decode($input, true);
+
+if (!$data_in || !isset($data_in['items']) || !is_array($data_in['items'])) {
+    http_response_code(400);
+    echo json_encode(["error"=>"Requisição inválida. Envie JSON com 'items'."]);
+    exit;
+}
+
+$items = [];
+foreach ($data_in['items'] as $it) {
+    $title = isset($it['title']) ? $it['title'] : 'Produto';
+    $quantity = isset($it['quantity']) ? intval($it['quantity']) : 1;
+    $unit = isset($it['unit_price']) ? floatval($it['unit_price']) : 0;
+    if ($unit <= 0) continue;
+    $items[] = ["title" => $title, "quantity" => $quantity, "unit_price" => $unit];
+}
+
+if (empty($items)) {
+    http_response_code(400);
+    echo json_encode(["error"=>"Nenhum item válido no carrinho."]);
+    exit;
 }
 
 $body = [
-    "items" => [
-        [
-            "title" => $title,
-            "quantity" => 1,
-            "unit_price" => $price
-        ]
-    ],
+    "items" => $items,
     "back_urls" => [
-        "success" => "https://ktivar.page.gd/success.html",
-        "failure" => "https://ktivar.page.gd/failure.html",
-        "pending" => "https://ktivar.page.gd/pending.html"
+        "success" => $base . "/success.html",
+        "failure" => $base . "/failure.html",
+        "pending" => $base . "/pending.html"
     ],
     "auto_return" => "approved"
 ];
@@ -42,17 +57,19 @@ $err = curl_error($ch);
 curl_close($ch);
 
 if ($err) {
-    echo "cURL Error: $err";
+    http_response_code(500);
+    echo json_encode(["error"=>"cURL Error: $err"]);
     exit;
 }
 
 $data = json_decode($res, true);
-if (isset($data['init_point'])) {
-    header('Location: ' . $data['init_point']);
+// Para facilitar testes, retornamos JSON com a resposta (o JS pode redirecionar usando init_point)
+header('Content-Type: application/json');
+if ($data) {
+    echo json_encode($data);
     exit;
 } else {
-    echo "Falha ao criar preferência: <pre>";
-    print_r($data);
-    echo "</pre>";
+    http_response_code(500);
+    echo json_encode(["error"=>"Resposta inválida do Mercado Pago"]);
     exit;
 }

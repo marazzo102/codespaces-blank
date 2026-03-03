@@ -2,30 +2,32 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Minha Loja Demo</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; }
-        .product { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; }
-        .product h2 { margin-top: 0; }
-        .buy-button { display: inline-block; background: #009ee3; color: #fff; padding: 0.5rem 1rem; text-decoration: none; border-radius: 4px; }
-    </style>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Minha Loja - Esqueleto</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <h1>Catálogo de Produtos</h1>
+    <header class="site-header">
+        <h1>Minha Loja</h1>
+        <button id="cart-toggle" class="cart-btn">Carrinho (<span id="cart-count">0</span>)</button>
+    </header>
 
-    <div class="product">
-        <h2>Produto A</h2>
-        <p>Descrição do produto A.</p>
-        <p>Preço: R$ 50,00</p>
-        <a class="buy-button" href="create_preference.php?title=Produto%20A&price=50">Comprar</a>
-    </div>
+    <main>
+        <section id="products" class="products-grid" aria-live="polite">
+            <!-- Produtos serão carregados via JavaScript -->
+        </section>
+    </main>
 
-    <div class="product">
-        <h2>Produto B</h2>
-        <p>Descrição do produto B.</p>
-        <p>Preço: R$ 120,00</p>
-        <a class="buy-button" href="create_preference.php?title=Produto%20B&price=120">Comprar</a>
-    </div>
+    <aside id="cart" class="cart-panel" aria-hidden="true">
+        <h2>Seu Carrinho</h2>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <div>Subtotal: <strong id="cart-subtotal">R$ 0,00</strong></div>
+            <button id="checkout-btn" class="primary">Finalizar compra</button>
+            <button id="clear-cart" class="muted">Limpar</button>
+        </div>
+    </aside>
 
+    <script src="assets/app.js"></script>
 </body>
 </html>
