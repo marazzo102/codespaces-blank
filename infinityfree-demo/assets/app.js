@@ -72,14 +72,18 @@ document.addEventListener('click', (e)=>{
 async function startCheckout(){
   const items = getCart();
   if(!items.length){ alert('Seu carrinho está vazio'); return; }
+  console.log('Iniciando checkout com itens:', items);
   // Monta payload compatível com Mercado Pago
   const payload = { items: items.map(i=>({ title: i.title, quantity: i.quantity, unit_price: i.unit_price })) };
+  console.log('Payload:', payload);
   const res = await fetch('create_preference.php',{
     method: 'POST',headers: {'Content-Type':'application/json'},body: JSON.stringify(payload)
   });
+  console.log('Resposta fetch:', res.status, res.ok);
   if(res.ok){
     // espera redirecionamento do PHP via Location
     const text = await res.text();
+    console.log('Texto resposta:', text);
     // se o PHP retornar uma URL em JSON, usar: location.href = url
     try{
       const j = JSON.parse(text);
