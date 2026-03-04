@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Minha Loja - Esqueleto</title>
+    <title>Minha Loja - E-commerce Moderno</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header class="site-header">
         <h1>Minha Loja</h1>
-        <button id="cart-toggle" class="cart-btn">Carrinho (<span id="cart-count">0</span>)</button>
+        <button id="cart-toggle" class="cart-btn">🛒 Carrinho (<span id="cart-count">0</span>)</button>
     </header>
 
     <main>
@@ -18,13 +18,21 @@
         </section>
     </main>
 
+    <div id="overlay" class="overlay"></div>
+
     <aside id="cart" class="cart-panel" aria-hidden="true">
-        <h2>Seu Carrinho</h2>
-        <div id="cart-items"></div>
+        <div class="cart-header">
+            <h2>Seu Carrinho</h2>
+            <button id="close-cart" class="close-cart">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
         <div class="cart-footer">
-            <div>Subtotal: <strong id="cart-subtotal">R$ 0,00</strong></div>
-            <button id="checkout-btn" class="primary">Finalizar compra</button>
-            <button id="clear-cart" class="muted">Limpar</button>
+            <div class="cart-total">
+                <span>Subtotal:</span>
+                <strong id="cart-subtotal">R$ 0,00</strong>
+            </div>
+            <button id="checkout-btn" class="checkout-btn">Finalizar Compra</button>
+            <button id="clear-cart" class="clear-cart">Limpar Carrinho</button>
         </div>
     </aside>
 

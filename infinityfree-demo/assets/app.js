@@ -13,11 +13,14 @@ async function loadProducts(){
     const card = document.createElement('article');
     card.className = 'product-card';
     card.innerHTML = `
-      <h3>${p.title}</h3>
-      <p>${p.description}</p>
-      <div class="price">${formatBRL(p.price)}</div>
-      <div>
-        <button data-id="${p.id}" data-title="${escapeHtml(p.title)}" data-price="${p.price}">Adicionar</button>
+      <img src="https://via.placeholder.com/280x200/cccccc/666666?text=${encodeURIComponent(p.title)}" alt="${p.title}">
+      <div class="product-info">
+        <h3>${p.title}</h3>
+        <p>${p.description}</p>
+        <div class="product-footer">
+          <div class="price">${formatBRL(p.price)}</div>
+          <button data-id="${p.id}" data-title="${escapeHtml(p.title)}" data-price="${p.price}">Adicionar</button>
+        </div>
       </div>`;
     container.appendChild(card);
   });
@@ -42,7 +45,14 @@ function renderCart(){
     subtotal += i.unit_price * i.quantity;
     const div = document.createElement('div');
     div.className = 'cart-item';
-    div.innerHTML = `<div>${i.title} x ${i.quantity}</div><div>${formatBRL(i.unit_price * i.quantity)} <button data-remove="${i.id}">✕</button></div>`;
+    div.innerHTML = `
+      <img src="https://via.placeholder.com/60x60/cccccc/666666?text=${encodeURIComponent(i.title)}" alt="${i.title}">
+      <div class="cart-item-info">
+        <h4>${i.title}</h4>
+        <p>Quantidade: ${i.quantity}</p>
+        <div class="cart-item-price">${formatBRL(i.unit_price * i.quantity)}</div>
+      </div>
+      <button data-remove="${i.id}" class="remove-item">✕</button>`;
     container.appendChild(div);
   });
   document.getElementById('cart-subtotal').textContent = formatBRL(subtotal);
@@ -53,10 +63,12 @@ document.addEventListener('click', (e)=>{
     const id = e.target.dataset.id; const title = e.target.dataset.title; const price = parseFloat(e.target.dataset.price);
     addToCart({id, title, unit_price: price, quantity: 1});
   }
-  if(e.target.matches('#cart-toggle')){
+  if(e.target.matches('#cart-toggle') || e.target.matches('#close-cart') || e.target.matches('#overlay')){
     const panel = document.getElementById('cart');
+    const overlay = document.getElementById('overlay');
     const hidden = panel.getAttribute('aria-hidden') === 'true';
     panel.setAttribute('aria-hidden', hidden ? 'false' : 'true');
+    overlay.classList.toggle('show', hidden);
   }
   if(e.target.matches('[data-remove]')){
     removeFromCart(e.target.getAttribute('data-remove'));
