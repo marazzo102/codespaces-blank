@@ -2,7 +2,7 @@
 // Criar preferência Mercado Pago a partir de JSON POST (esqueleto para demo)
 // Substitua pelo seu Access Token do Mercado Pago (sandbox ou produção)
 
-$access_token = 'COLOQUE_SEU_ACCESS_TOKEN_AQUI';
+$access_token = 'APP_USR-677e53e3-73c2-44ff-8c17-da9bee16fa3f';
 
 // Determina base URL automaticamente para back_urls
 $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
