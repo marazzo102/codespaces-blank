@@ -52,3 +52,5 @@ Abra http://localhost:8000 no navegador.
 5. Adicione autenticação de usuários
 
 Boa sorte com sua loja! 🚀
+
+Action
