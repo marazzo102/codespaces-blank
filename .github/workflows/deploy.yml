@@ -18,6 +18,6 @@ jobs:
           username: ${{ secrets.INF_USER }}
           password: ${{ secrets.INF_PASS }}
           local-dir: infinityfree-demo/        # pasta para enviar
-          server-dir: /htdocs                  # destino no servidor
+          server-dir: /htdocs/                 # destino no servidor
           protocol: ftps
           port: 21
